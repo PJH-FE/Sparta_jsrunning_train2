@@ -4,7 +4,7 @@
 let arr=  [10, 20, 30] 
 // 해당 로직을 작성하세요  
 // 결과 값: [100, 200, 300] 출력해주세요 
-arr.forEach((a, b) => arr[b] = a*10);
+arr.forEach((a, b, c) => c[b] = a*10);
 console.log(arr)
 
 
