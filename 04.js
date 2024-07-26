@@ -69,16 +69,15 @@ console.log(arr.some((i) => i.length > 5))
 // 10.
 var arr = ["banana", "kiwi", "mango"];
 // kiwi 와 manggo 사이에 새로운 요소를 삽입하는 코드를 작성하고 출력해주세요
-// arr.pop();
-// arr.push('apple','mango');
-arr.splice(2,0,'apple')
+arr.splice(2,0,'apple');
 console.log( arr )
 
 // 11.
 var arr = [1, 5, -3, 10, 0, 8];
-
 // 배열에 음수가 하나라도 있는지 판별하는 코드를 작성하고 반환값을 출력해주세요
+console.log(arr.some((i) => i < 0));
 
 // 12.
 var arr = [1, 5, -3, 10, 0, 8];
 // 모든 숫자가 음수인지 판별하는 코드를 작성하고 반환값을 출력해주세요
+console.log(arr.every((i) => i < 0));

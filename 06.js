@@ -10,7 +10,7 @@ const students = [
 ];
 
 // 여기에 코드를 작성해주세요
-students.map(a => {
+let good = students.map(a => {
     a.average = (a.scores[0] + a.scores[1]) / 2;
     return a
 }).filter(b => {
@@ -18,11 +18,13 @@ students.map(a => {
 }).map(c => {
     return c.name
 })
-console.log(c)
+console.log(good)
 
 // 예상 출력: ["이재상", "김준현"]
 
 // 2.
 const numbers = [5, 10, 15, 20, 25];
 // 요소에 2를 곱하고, 30 이하인 것들만 반환받아 출력해주세요
+let result = numbers.map(a => a*2).filter(b => b <= 30);
+console.log(result)
 // 출력값 : [10, 20, 30]
